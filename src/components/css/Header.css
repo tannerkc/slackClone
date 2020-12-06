@@ -1,0 +1,222 @@
+*:hover .header{
+    background-color: var(--theme-color);
+    color: rgba(255, 255, 255, .8);
+}
+*:hover .search-bar{
+    border: .1rem #A7A3A7 solid;
+    background-color: #49254A;
+}
+*:hover .search-bar::-webkit-input-placeholder {
+    color: #c9c9c9;
+ }
+ 
+ *:hover .search-bar:-moz-placeholder { /* Firefox 18- */
+    color: #c9c9c9;  
+ }
+ 
+ *:hover .search-bar::-moz-placeholder {  /* Firefox 19+ */
+    color: #c9c9c9;  
+ }
+ 
+ *:hover .search-bar:-ms-input-placeholder {  
+    color: #c9c9c9;  
+ }
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--header-color);
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: .05px #634363a8 solid;
+    transition: all .3s ease;
+}
+.header div{
+    display: flex;
+    align-items: center;
+}
+.header:nth-child(odd){
+    padding: 5px 20px;
+}
+.header .MuiSvgIcon-root{
+    cursor: pointer;
+}
+.header-avatar{
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: contain;
+}
+
+.header-search{
+    display: flex;
+    flex-direction: column;
+    flex: .4;
+    justify-content: space-between;
+}
+.search-bar{
+    flex: .85;
+    padding: 4px 8px;
+    border: .1rem #a7a3a773 solid;
+    border-radius: .2rem;
+    background-color: #432C44;
+    transition: all .3s ease;
+    margin: 0 10px;
+}
+.search-bar:focus{
+    background-color: white;
+    flex: 1;
+    border: none;
+    outline: none;
+    z-index: 99;
+}
+#searchIcon{
+    display: none;
+}
+.searchFooter{
+    display: none !important;
+}
+.header-search:focus-within .searchFooter{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+}
+.header-search:focus-within .focusedSearch-filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-search:focus-within .focusedSearch-filters .focusedSearch-filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px !important;
+    color: rgb(73, 73, 73);
+    background-color: #D8E5F0;    
+    padding: 5px 10px; 
+    margin-right: .2rem;
+    border-radius: .3rem;
+}
+.header-search:focus-within .searchFooter p{
+    color: #7a7a7a;
+    font-size: small;
+    padding: 10px 20px;
+    padding-bottom: 0;
+}
+
+.header-search:focus-within .searchHeader{
+    flex: 1;
+    width: 90%;
+    border-bottom: .1rem solid #d3d2d2;
+}
+.header-search:focus-within #searchBarIcon{
+    display: none;
+}
+.header-search:focus-within #searchIcon{
+    display: block;
+    color: #636363;
+}
+.header-search:focus-within{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 2%);
+
+    border: .1rem #d3d2d2 solid;
+    background-color: white;
+    border-radius: 10px;
+}
+.header-search:focus-within div{
+    padding: 10px 20px;
+}
+
+
+.search-bar::-webkit-input-placeholder {
+    color: #A7A3A7;
+ }
+ 
+ .search-bar:-moz-placeholder { /* Firefox 18- */
+    color: #A7A3A7;  
+ }
+ 
+ .search-bar::-moz-placeholder {  /* Firefox 19+ */
+    color: #A7A3A7;  
+ }
+ 
+ .search-bar:-ms-input-placeholder {  
+    color: #A7A3A7;  
+ }
+
+/*  
+ .focusedSearch{
+     display: none !important;
+     flex-direction: column;
+     justify-content: flex-start !important;
+     width: 500px;
+     border-radius: .5rem;
+     border: .1rem #d3d2d2 solid;
+     color: #636363;
+     background-color: white;
+ }
+ .focusedSearch > div{
+    padding: 10px 20px;
+ }
+ .focusedSearch .MuiSvgIcon-root{
+    font-size: 17px;
+    padding-right: 10px;
+}
+.focusedSearch .focused-searchbar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1rem solid #d3d2d2;
+}
+.focusedSearch .focused-searchbar > div{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+ .focusedSearch input{
+     border: none;
+ }
+
+ .searchContainer:focus-within .focusedSearch{
+    display: flex;
+    top: 0;
+    width: 500px;
+    margin: 0 auto;
+} */
+/* .searchContainer:focus-within .unfocusedSearch{
+   display: none;
+} */
+/* 
+
+  .focusedSearch input::-webkit-input-placeholder {
+    color: #8d8d8d;
+ }
+ 
+  .focusedSearch input:-moz-placeholder {
+    color: #8d8d8d;  
+ }
+ 
+  .focusedSearch input::-moz-placeholder {
+    color: #8d8d8d;  
+ }
+ 
+  .focusedSearch input:-ms-input-placeholder {  
+    color: #8d8d8d;  
+ }
+
+ .focusedSearch p{
+    color: #7a7a7a;
+    font-size: small;
+    padding: 10px 20px;
+    padding-bottom: 0;
+}
+*/
