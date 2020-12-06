@@ -33,6 +33,7 @@
     justify-content: space-between;
     align-content: center;
     border-bottom: 1px solid lightgrey;
+    min-height: 76px;
     max-height: 76px;
     box-sizing: border-box;
     padding: 20px;
@@ -42,6 +43,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.chat_headerRight img{
+    /* object-fit: contain; */
+    height: 25px;
+    max-width: 25px;
+    padding-right: 3px;
+    border-radius: 5px;
 }
 
 #chatIcon{

@@ -4,31 +4,43 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Chat from './components/Chat';
 import Header from './components/Header';
+import Login from './components/Login';
 import Sidebar from './components/Sidebar';
+import { useStateValue } from './StateProvider';
 
 
 function App() {
+
+  const [{user}, dispatch] = useStateValue();
+
   return (
     <div className="App">
 
       <Router>
+        {
+        !user?(
+          <Login />
+        ):
+          <>
+            <Header />
 
-        <Header />
+            <div className="app_body">
+              <Sidebar />
 
-        <div className="app_body">
-          <Sidebar />
+              <Switch>
 
-          <Switch>
+                <Route path="/channel/:channelId" component={Chat} />
 
-            <Route path="/channel/:channelId" component={Chat} />
+                <Route path="/">
+                </Route>
 
-            <Route path="/">
-            </Route>
-
-          </Switch>
+              </Switch>
 
 
-        </div>
+            </div>
+          </>
+        }
+
 
       </Router>
 

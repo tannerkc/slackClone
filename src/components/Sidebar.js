@@ -10,8 +10,13 @@ import AddIcon from '@material-ui/icons/Add';
 import './css/Sidebar.css';
 import SidebarOption from './SidebarOption';
 import db from '../firebase';
+import { useStateValue } from '../StateProvider';
 
 function Sidebar() {
+
+    const [{user}] = useStateValue();
+
+
     const [channels, setChannels] = useState([]);
 
     useEffect(() => {
@@ -32,7 +37,7 @@ function Sidebar() {
                 <h2>Group Name</h2>
                     <h3>
                         <FiberManualRecordIcon id="alertIcon" />
-                        Users Name
+                        {user?.displayName}
                     </h3>
                 </div>
                 <CreateIcon id="create" />

@@ -11,10 +11,14 @@ import ChannelsIcon from '@material-ui/icons/RadioOutlined';
 import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 import './css/Header.css';
+import { useStateValue } from '../StateProvider';
 
 
 
 function Header() {
+
+    const [{user}] = useStateValue();
+
     return (
         <div>
             <div className="header">
@@ -45,8 +49,8 @@ function Header() {
                 <div className="header-right">
                     <Avatar
                         className="header-avatar"
-                        alt='Tanner Cottle'
-                        src=''
+                        alt={user?.displayName}
+                        src={user ? user?.photoURL : "https://a.slack-edge.com/bfaba/img/avatars-teams/ava_0012-230.png"}
                     />
                 </div>
             </div>
