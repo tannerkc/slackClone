@@ -13,24 +13,22 @@ function App() {
 
       <Router>
 
-      <Header />
+        <Header />
 
-      <div className="app-body">
-        <Sidebar />
+        <div className="app_body">
+          <Sidebar />
 
-        <Switch>
+          <Switch>
 
-          <Route path="/channel/:channelId">
-            <Chat />
-          </Route>
+            <Route path="/channel/:channelId" component={Chat} />
 
-          <Route path="/">
-          </Route>
+            <Route path="/">
+            </Route>
 
-        </Switch>
+          </Switch>
 
 
-      </div>
+        </div>
 
       </Router>
 

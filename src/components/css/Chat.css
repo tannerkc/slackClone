@@ -1,0 +1,56 @@
+.chat{
+    display: flex;
+    flex: .75;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    overflow-y: scroll;
+    padding-bottom: 150px;
+}
+
+.chat::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+.chat::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: none;
+}
+.chat::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.chat::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+.chat::-webkit-scrollbar-thumb:active{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+.chat_header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid lightgrey;
+    max-height: 76px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.chat_headerLeft, .chat_headerRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#chatIcon{
+    font-size: 20px;
+    padding-left: 10px;
+    color: grey;
+}
+
+.chat_channelName{
+    text-transform: lowercase;
+    display: flex;
+}

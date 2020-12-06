@@ -1,12 +1,11 @@
 .sidebar{
     display: flex;
+    flex: .25;
     flex-direction: column;
     background-color: var(--sidebar-color);
-    width: 200px;
-    min-width: 200px;
     color: rgba(255, 255, 255, 0.575);
     height: calc(100vh - 40px);
-    resize: horizontal;
+    /* resize: horizontal; */
     overflow-y: scroll;
 }
 .sidebar::-webkit-scrollbar {
@@ -36,7 +35,7 @@ background: rgba(255, 255, 255, 0.9);
     max-height: 75px;
     border-bottom: .05px #634363a8 solid;
     color: white;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 .sidebar-info{
     display: flex;
@@ -67,5 +66,5 @@ background: rgba(255, 255, 255, 0.9);
 
 .border-top{
     border-top: .05px #634363a8 solid;
-    margin-top: .2rem;
+    /* margin-top: .2rem; */
 }

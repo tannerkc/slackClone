@@ -2,4 +2,10 @@ body{
   --sidebar-color: #3F0E40;
   --theme-color: #350D36;
   --header-color: #361D37;
+  overflow: hidden;
+}
+
+.app_body{
+  display: flex;
+  max-height: 100vh;
 }
